@@ -19,8 +19,7 @@ deployment:
   production:
     branch: master
     commands:
-      - aws s3 sync build/ s3://ipnicholson.com
+      - aws s3 sync s3://ipnicholson.com
   staging:
     branch: /^(?!master\/.*).*$/
     commands:
-      - aws s3 sync build/ s3://ipnicholson.com

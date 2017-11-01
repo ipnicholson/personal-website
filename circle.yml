@@ -15,6 +15,10 @@ general:
     ignore:
       - gh-pages
 
+test:
+  override:
+    - "true"
+
 deployment:
   production:
     branch: master
@@ -23,3 +27,5 @@ deployment:
   staging:
     branch: /^(?!master\/.*).*$/
     commands:
+
+    
